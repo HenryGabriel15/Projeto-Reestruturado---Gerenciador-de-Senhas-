@@ -5,19 +5,19 @@ Projeto Java simples para gerenciamento de senhas com funcionalidades adicionais
 ## 📁 Estrutura do Projeto
 
 GerenciadorDeSenhas/
-├── .classpath
-├── .project
-├── src/
-│ └── com/
-│ └── gerenciador/
-│ ├── Main.java
-│ ├── modelo/
-│ │ └── Credencial.java
-│ └── servico/
-│ ├── Autenticador2FA.java
-│ ├── CriptografiaAES.java
-│ ├── GeradorSenha.java
-│ └── VerificadorVazamento.java
+ ├── .classpath
+ ├── .project
+ ├── src/
+ │ └── com/
+ │ └── gerenciador/
+ │ ├── Main.java
+ │ ├── modelo/
+ │ │ └── Credencial.java
+ │ └── servico/
+ │ ├── Autenticador2FA.java
+ │ ├── CriptografiaAES.java
+ │ ├── GeradorSenha.java
+ │ └── VerificadorVazamento.java
 
 
 ## 🚀 Funcionalidades
