@@ -1,58 +1,50 @@
-# Gerenciador de Senhas (Java)
+# Gerenciador de Senhas 🔐
 
-Este é um projeto simples de **Gerenciador de Senhas** desenvolvido em Java. A aplicação permite gerenciar credenciais de forma segura com suporte a autenticação 2FA, criptografia AES e verificação de vazamento de senhas.
+Projeto Java simples para gerenciamento de senhas com funcionalidades adicionais como autenticação 2FA, geração de senhas seguras, criptografia AES e verificação de vazamento de credenciais.
 
-## Importante
+## 📁 Estrutura do Projeto
 
-- 🔑 Chave de acesso código 2FA (simulado): 123456
-
-## Funcionalidades
-
-- ✅ Autenticação em dois fatores (2FA)
-- 🔐 Armazenamento seguro de senhas com criptografia AES
-- 🔍 Verificação de senhas comprometidas
-- 🔑 Geração automática de senhas fortes
-- 💾 Salvamento e carregamento automático de dados (`senhas.dat`)
-- 📋 Interface de linha de comando com menu interativo
-
-## Estrutura do Projeto
-
-```
-ProjetoGerenciadorSenhas/
+GerenciadorDeSenhas/
+├── .classpath
+├── .project
 ├── src/
-│   ├── Main.java
-│   ├── modelo/
-│   │   └── Credencial.java
-│   └── servico/
-│       ├── Autenticador2FA.java
-│       ├── CriptografiaAES.java
-│       ├── GeradorSenha.java
-│       └── VerificadorVazamento.java
-├── bin/ (arquivos compilados)
-├── senhas.dat (arquivo serializado com dados das senhas)
-├── .classpath / .project (configuração do Eclipse)
-```
+│ └── com/
+│ └── gerenciador/
+│ ├── Main.java
+│ ├── modelo/
+│ │ └── Credencial.java
+│ └── servico/
+│ ├── Autenticador2FA.java
+│ ├── CriptografiaAES.java
+│ ├── GeradorSenha.java
+│ └── VerificadorVazamento.java
 
-## Como Executar
 
-1. Compile os arquivos Java:
+## 🚀 Funcionalidades
 
-```bash
-javac -d bin src/**/*.java
-```
+- 🔐 Criptografia de senhas com AES
+- 📱 Autenticação em duas etapas (2FA)
+- 🔑 Geração de senhas seguras
+- 🌐 Verificação de vazamento de credenciais
+- 💾 Armazenamento de credenciais (via objeto)
 
-2. Execute o programa:
-
-```bash
-java -cp bin Main
-```
-
-## Requisitos
+## 🛠️ Requisitos
 
 - Java 8 ou superior
-- Terminal compatível com UTF-8
+- Eclipse IDE (ou qualquer IDE compatível com Java)
 
-## Observações
+## ✅ Como Executar
 
-- O arquivo `senhas.dat` armazena os dados serializados das credenciais.
-- O projeto utiliza técnicas de criptografia simétrica (AES) para proteger as senhas localmente.
+1. **Importe o projeto no Eclipse:**
+   - `File > Import > Existing Projects into Workspace`
+   - Selecione a pasta extraída do projeto
+
+2. **Execute o arquivo `Main.java`**
+
+## 📦 Build
+
+Este projeto **não usa Maven ou Gradle**. O gerenciamento de dependências é feito manualmente (se necessário).
+
+---
+
+Desenvolvido com ☕ por Henry
